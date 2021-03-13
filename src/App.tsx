@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Header from './Header/Header'
 function App() {
   return (
-    <h1>Hello New Project</h1>
+    <Header />
   );
 }
 
