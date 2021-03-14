@@ -203,11 +203,13 @@ header .backImageHeader svg {
         }
 
         header .backImageHeader svg {
-            bottom: -45px;
+            bottom: -44px;
+            z-index: 0;
         }
 
         header>article {
-            top: 10rem
+            top: 7rem;
+            z-index: 1;
         }
     }
 }
