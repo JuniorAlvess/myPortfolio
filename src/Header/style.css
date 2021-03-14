@@ -184,7 +184,7 @@ header .backImageHeader svg {
 
     header>nav ul {
         background-color: transparent;
-
+        position: relative;
         width: 32rem;
         height: 3rem;
 
