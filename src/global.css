@@ -56,8 +56,12 @@ section>.projects .project {
     justify-content: space-between;
 
     border-radius: 0.5rem;
-    box-shadow: 0px 3px 0.5em #333;
+    transition: 0.3s;
+    box-shadow: 0px 1px 0.2em #333;
 } 
+section>.projects .project:hover {
+    box-shadow: 0px 4px 0.5em #333;
+}
 
 section>.projects .project img {
     height: 12rem;
@@ -80,6 +84,12 @@ section>.projects .project span h3 {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
+
+section>.projects .project a {
+    display: flex;
+    align-items: center;
+}
+
 
 section>.projects .project .techs {
     display: flex;
