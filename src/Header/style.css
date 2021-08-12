@@ -1,6 +1,6 @@
 header {
     background-color: #0A043C;
-    height: 40rem;
+    height: 100vh;
 }
 
 header nav {
@@ -165,9 +165,9 @@ header article .contact .icon-contact:hover {
 
 header .backImageHeader svg {
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     width: 100%;
-
+    /* border: 1px solid #f00; */
 }
 
 @media(min-width: 701px) {
@@ -198,15 +198,6 @@ header .backImageHeader svg {
     }
 
     @media (min-width: 1000px) {
-        header {
-            height: 43.5rem;
-        }
-
-        header .backImageHeader svg {
-            bottom: -44px;
-            z-index: 0;
-        }
-
         header>article {
             top: 7rem;
             z-index: 1;
