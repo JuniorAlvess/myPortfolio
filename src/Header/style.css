@@ -28,12 +28,13 @@ header>nav .menu-hamburger:hover {
 header>nav .menu-hamburger .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 2.187rem;
+    height: 0.312rem;
 
     background-color: var(--colorMenu);
+    border: 1px solid #333;
     
-    margin: 6px 0;
+    margin: 0.375rem 0;
     transition: .4s;
 }
 
@@ -52,7 +53,7 @@ header>nav .menu-hamburger .bar1,
 }
 
 header>nav ul {
-    background-color: rgba(0, 0, 0, .50);
+    background-color: #A3DDCB;
     
     position: fixed;
     top: 0;
@@ -63,37 +64,41 @@ header>nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     padding: 0;
 
     overflow: hidden;
     transition: height .4s;
     z-index: 1;
+
+    border-radius: 0 0 6rem 6rem;
+    box-shadow: 0 0 .5em #333;
 }
 
 .height-menu {
-    height: 8rem;
+    height: 70vh;
 }
 
-header>nav ul li {
+header>nav ul a {
     color: var(--colorMenu);
-
-    width: 100%;
-    padding: 0.3rem;
 
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .1rem;
 
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+
+    transition: filter .3s;
     list-style: none;
     cursor: pointer;
 }
 
-header>nav ul li:hover {
-    filter: brightness(0.9);
-    text-decoration: underline;
+header>nav ul a:hover {
+    filter: brightness(1.1);
 }
 
 header>article {
@@ -165,19 +170,10 @@ header article .contact .icon-contact:hover {
 
 header .backImageHeader svg {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* border: 1px solid #f00; */
+    bottom: -0.1rem;
 }
 
-@media(min-width: 701px) {
-    header nav {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    }
-
+@media(min-width: 801px) {
     header>nav .menu-hamburger {
         display: none;
     }
@@ -185,22 +181,27 @@ header .backImageHeader svg {
     header>nav ul {
         background-color: transparent;
         position: relative;
-        width: 32rem;
-        height: 3rem;
+        height: auto;
 
-        display: flex;
         flex-direction: row;
-    }
 
-    header>nav ul li:hover {
-        filter: brightness(1.2);
+        border-radius: 0;
+        box-shadow: none;
+    }
+    header>nav ul a {
+        text-decoration: none;
+    }
+    header>nav ul a:hover {
         text-decoration: underline;
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         header>article {
             top: 7rem;
             z-index: 1;
+        }
+        header>nav ul {
+            width: auto;
         }
     }
 }
