@@ -4,7 +4,7 @@ import Projects from '../Projects/Projects'
 import Project from '../components/Project/Project'
 import { FaLink, FaGithub, FaHtml5, FaCss3, FaNode, FaReact, FaNodeJs } from 'react-icons/fa'
 
-import imageProject from '../assets/imageProject.jpg'
+import imageProject from '../assets/screenshot.png'
 
 export default function Portfolio() {
     // const icon = `$<FaCss3 />`
@@ -12,7 +12,7 @@ export default function Portfolio() {
         <>
             <Header />
             <main>
-                <section>
+                <section id="projects">
                     <h2>Projetos</h2>
                     <Project
                         image={imageProject}
