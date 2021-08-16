@@ -2,7 +2,6 @@ import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 import './style.scss'
 // import BackImageHeader from '../assets/BackImageHeader.svg'
-// import BackImageFooter from '../assets/BackImageFooter.svg'
 
 export default function Header() {
 
@@ -37,6 +36,9 @@ export default function Header() {
                     </a>
                     <a href="#">
                         <li>Habilidades</li>
+                    </a>
+                    <a href="#" download>
+                        <li>Download CV</li>
                     </a>
                 </ul>
             </nav>
