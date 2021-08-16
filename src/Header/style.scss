@@ -94,6 +94,7 @@ header {
                 filter: brightness(1.1);
             }
         }
+
         .height-menu {
             height: 70vh;
         }
@@ -162,8 +163,10 @@ header {
 
 @media(min-width: 801px) {
     header {
-        nav .menu-hamburger {
-            display: none;
+        nav {
+            .menu-hamburger {
+                display: none;
+            }
 
             ul {
                 background-color: transparent;
@@ -176,10 +179,33 @@ header {
                 box-shadow: none;
 
                 a {
+                    font-size: 1.8rem;
+                    letter-spacing: 0;
                     text-decoration: none;
 
                     &:hover {
                         text-decoration: underline;
+                    }
+
+                    &:last-child {
+                        text-decoration: none;
+                        font-size: 1.3rem;
+
+                        li {
+                            border: none;
+                            background-color: var(--subtitleColor);
+
+                            padding: .3rem .6rem;
+
+                            border-radius: 1rem;
+                            text-decoration: none;
+
+                            box-shadow: 0 0 .3em #ccc;
+                        }
+                        &:hover {
+                            transform:scale(.99);
+                            filter: none;
+                        }
                     }
                 }
             }
@@ -188,11 +214,9 @@ header {
 
     @media (min-width: 1100px) {
         header {
-            header {
-                nav {
-                    ul {
-                        width: auto;
-                    }
+            nav {
+                ul {
+                    width: auto;
                 }
             }
 
