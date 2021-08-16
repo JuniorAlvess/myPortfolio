@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
-import './style.css'
+import './style.scss'
 // import BackImageHeader from '../assets/BackImageHeader.svg'
 // import BackImageFooter from '../assets/BackImageFooter.svg'
 

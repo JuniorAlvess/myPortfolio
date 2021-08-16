@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --subtitleColor: #03506F;
+    --colorMenu: #EEEEEE;
+    --colorParagraph: #333;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F4F5;
+
+    h2 {
+        color: var(--subtitleColor);
+        text-align: center;
+        
+        font-size: 2.3rem;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    
+        margin: 1rem 0;
+    }
+    
+    section {
+        width: 95%;
+        min-height: 10rem;
+    
+        margin: 0.3rem auto;
+
+        .projects  {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0 1rem;
+
+            .project {
+                background-color: #fff;
+                
+                height: 15rem;
+                width: 25rem;
+            
+                padding: 0.2rem;
+                margin: 1rem 0;
+                
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            
+                border-radius: 0.5rem;
+                transition: 0.3s;
+                box-shadow: 0px 1px 0.2em #333;
+
+                &:hover {
+                    box-shadow: 0px 4px 0.5em #333;
+                }
+            } 
+            
+            img {
+                height: 12rem;
+                width: 100%;
+            
+                border-radius: 0.5rem;
+            }
+            
+            span {
+                width: 10rem;
+            
+                display: inline-flex;
+                padding: 0.2rem;
+            }
+            
+            h3 {
+                margin-right: 0.3rem;
+            
+                /* font-size: 2.3rem; */
+                font-weight: 400;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            a {
+                display: flex;
+                align-items: center;
+            }
+            
+            
+            .techs {
+                display: flex;
+                justify-content: center;
+                
+                padding: 0.2rem;
+            }
+            
+            .project-icon {
+                margin: 0 0.3rem;
+                cursor: pointer;
+            }
+            
+            .project-icon:hover {
+                filter: brightness(0.7);
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media(min-width: 735px) {
+    section>.projects .project {
+        width: 22rem;
+        margin: 1rem auto;
+    } 
+}
+
+@media(min-width: 900px) {
+    section>.projects .project {
+        width: 25rem;
+    } 
+}
