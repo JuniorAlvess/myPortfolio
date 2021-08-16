@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaLink, FaGithub, FaHtml5, FaCss3, FaNode, FaReact, FaNodeJs } from 'react-icons/fa'
 
 import imageProject from '../assets/imageProject.jpg'
+import './projects.scss';
 
 interface ProjectProps {
     image: string;
